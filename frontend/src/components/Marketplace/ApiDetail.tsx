@@ -70,8 +70,6 @@ const ApiDetail: React.FC = () => {
     const [reviewRating, setReviewRating] = useState(0);
     const [reviewTitle, setReviewTitle] = useState('');
     const [reviewComment, setReviewComment] = useState('');
-    const [_submittingReview, _setSubmittingReview] = useState(false);
-
     const [isSubscribed, setIsSubscribed] = useState(false);
     const [userSubscription, setUserSubscription] = useState<any>(null);
 
