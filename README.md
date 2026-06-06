@@ -1,6 +1,10 @@
-# API Marketplace Platform
+# API Monetization Marketplace Platform
 
-A full production-ready API marketplace platform (like RapidAPI) where users can publish, discover, subscribe to, and pay for APIs. Built on Node.js + Express + MongoDB + Razorpay.
+A full production-ready API marketplace platform (like RapidAPI) where users can publish, discover, subscribe to, and pay for APIs. Built on Node.js + Express + MongoDB + Razorpay + React.
+
+## 🚀 Live Demo
+- **Frontend App**: [https://api-monetization-ohq8.vercel.app](https://api-monetization-ohq8.vercel.app)
+- **Backend API**: [https://api-monetization.onrender.com](https://api-monetization.onrender.com)
 
 ## Features
 
