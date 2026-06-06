@@ -26,24 +26,7 @@ app.set('trust proxy', 1);
 // Security
 app.use(helmet());
 app.use(cors({
-    origin: function (origin, callback) {
-        // Strip trailing slash if present
-        const cleanOrigin = origin ? origin.replace(/\/$/, '') : '';
-        
-        const allowedOrigins = [
-            'http://localhost:3000',
-            'http://localhost:3001',
-            'http://127.0.0.1:3000',
-            'http://127.0.0.1:3001',
-            process.env.CORS_ORIGIN
-        ].filter(Boolean);
-
-        if (!cleanOrigin || allowedOrigins.includes(cleanOrigin) || cleanOrigin.startsWith('http://localhost') || cleanOrigin.startsWith('http://127.0.0.1')) {
-            callback(null, true);
-        } else {
-            callback(new Error(`CORS: origin ${origin} not allowed`));
-        }
-    },
+    origin: true,
     credentials: true
 }));
 
